@@ -39,6 +39,7 @@ export class UsersService {
   }
 
   getUserProfile(userId: string): Observable<User> {
+    console.log(this.usersUrl)
     return this.http
       .get<UserProfileResponse>(`${this.usersUrl}/${userId}`)
       .pipe(
