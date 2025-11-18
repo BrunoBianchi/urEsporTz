@@ -2,22 +2,22 @@ import {
   Overlay,
   OverlayConfig,
   OverlayModule
-} from "./chunk-GJPPQL54.js";
+} from "./chunk-NF3XXQRJ.js";
 import {
   CdkScrollableModule
-} from "./chunk-QWIYHNYR.js";
+} from "./chunk-7DYXJXLV.js";
 import {
   DomPortalOutlet,
   TemplatePortal
-} from "./chunk-RF7ZMVJA.js";
-import "./chunk-VURXKYNV.js";
+} from "./chunk-NJXIAQDC.js";
+import "./chunk-PACEUK3B.js";
 import {
   animate,
   state,
   style,
   transition,
   trigger
-} from "./chunk-PBVMUARX.js";
+} from "./chunk-SOTFMXHH.js";
 import {
   DOWN_ARROW,
   Directionality,
@@ -36,11 +36,11 @@ import {
   isFakeMousedownFromScreenReader,
   isFakeTouchstartFromScreenReader,
   normalizePassiveListenerOptions
-} from "./chunk-7OR25NK5.js";
+} from "./chunk-EC5WURY4.js";
 import {
   CommonModule,
   DOCUMENT
-} from "./chunk-W2BAPFRP.js";
+} from "./chunk-SJKFNRJ3.js";
 import {
   ApplicationRef,
   ChangeDetectionStrategy,
@@ -62,14 +62,25 @@ import {
   Output,
   QueryList,
   Self,
+  Subject,
+  Subscription,
   TemplateRef,
   ViewChild,
   ViewContainerRef,
   ViewEncapsulation$1,
   afterNextRender,
+  asapScheduler,
   booleanAttribute,
+  delay,
+  filter,
   inject,
+  merge,
+  of,
   setClassMetadata,
+  startWith,
+  switchMap,
+  take,
+  takeUntil,
   ɵɵInputTransformsFeature,
   ɵɵProvidersFeature,
   ɵɵStandaloneFeature,
@@ -100,27 +111,13 @@ import {
   ɵɵrestoreView,
   ɵɵtemplate,
   ɵɵviewQuery
-} from "./chunk-TL4DGONE.js";
+} from "./chunk-TEFF47H3.js";
 import {
-  asapScheduler,
-  merge
-} from "./chunk-FFZIAYYX.js";
-import "./chunk-6Q4RANH6.js";
-import {
-  Subject,
-  Subscription,
   __spreadProps,
-  __spreadValues,
-  delay,
-  filter,
-  of,
-  startWith,
-  switchMap,
-  take,
-  takeUntil
-} from "./chunk-CXCX2JKZ.js";
+  __spreadValues
+} from "./chunk-WDMUDEB6.js";
 
-// node_modules/@angular/material/fesm2022/menu.mjs
+// node_modules/.pnpm/@angular+material@18.2.14_12e59df0d021be48d2b0536c80b82f43/node_modules/@angular/material/fesm2022/menu.mjs
 var _c0 = ["mat-menu-item", ""];
 var _c1 = [[["mat-icon"], ["", "matMenuItemIcon", ""]], "*"];
 var _c2 = ["mat-icon, [matMenuItemIcon]", "*"];

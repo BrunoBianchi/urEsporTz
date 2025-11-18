@@ -1,23 +1,23 @@
 import {
-  SharedResizeObserver
-} from "./chunk-WDL5WI4A.js";
-import {
   CdkScrollable,
   ViewportRuler
-} from "./chunk-QWIYHNYR.js";
+} from "./chunk-7DYXJXLV.js";
 import {
   CdkPortal,
   CdkPortalOutlet,
   TemplatePortal
-} from "./chunk-RF7ZMVJA.js";
-import "./chunk-VURXKYNV.js";
+} from "./chunk-NJXIAQDC.js";
+import "./chunk-PACEUK3B.js";
+import {
+  SharedResizeObserver
+} from "./chunk-N7B42HN5.js";
 import {
   animate,
   state,
   style,
   transition,
   trigger
-} from "./chunk-PBVMUARX.js";
+} from "./chunk-SOTFMXHH.js";
 import {
   CdkMonitorFocus,
   CdkObserveContent,
@@ -32,13 +32,14 @@ import {
   SPACE,
   hasModifierKey,
   normalizePassiveListenerOptions
-} from "./chunk-7OR25NK5.js";
+} from "./chunk-EC5WURY4.js";
 import {
   DOCUMENT
-} from "./chunk-W2BAPFRP.js";
+} from "./chunk-SJKFNRJ3.js";
 import {
   ANIMATION_MODULE_TYPE,
   Attribute,
+  BehaviorSubject,
   ChangeDetectionStrategy,
   ChangeDetectorRef,
   Component,
@@ -46,6 +47,7 @@ import {
   ContentChild,
   ContentChildren,
   Directive,
+  EMPTY,
   ElementRef,
   EventEmitter,
   Inject,
@@ -54,19 +56,32 @@ import {
   Input,
   NgModule,
   NgZone,
+  Observable,
   Optional,
   Output,
   QueryList,
+  Subject,
+  Subscription,
   TemplateRef,
   ViewChild,
   ViewContainerRef,
   ViewEncapsulation$1,
   afterNextRender,
   booleanAttribute,
+  debounceTime,
+  filter,
   forwardRef,
+  fromEvent,
   inject,
+  merge,
   numberAttribute,
+  of,
   setClassMetadata,
+  skip,
+  startWith,
+  switchMap,
+  takeUntil,
+  timer,
   ɵɵInheritDefinitionFeature,
   ɵɵInputTransformsFeature,
   ɵɵNgOnChangesFeature,
@@ -108,29 +123,10 @@ import {
   ɵɵtext,
   ɵɵtextInterpolate,
   ɵɵviewQuery
-} from "./chunk-TL4DGONE.js";
-import {
-  fromEvent,
-  merge
-} from "./chunk-FFZIAYYX.js";
-import "./chunk-6Q4RANH6.js";
-import {
-  BehaviorSubject,
-  EMPTY,
-  Observable,
-  Subject,
-  Subscription,
-  debounceTime,
-  filter,
-  of,
-  skip,
-  startWith,
-  switchMap,
-  takeUntil,
-  timer
-} from "./chunk-CXCX2JKZ.js";
+} from "./chunk-TEFF47H3.js";
+import "./chunk-WDMUDEB6.js";
 
-// node_modules/@angular/material/fesm2022/tabs.mjs
+// node_modules/.pnpm/@angular+material@18.2.14_12e59df0d021be48d2b0536c80b82f43/node_modules/@angular/material/fesm2022/tabs.mjs
 var _c0 = ["*"];
 function MatTab_ng_template_0_Template(rf, ctx) {
   if (rf & 1) {
