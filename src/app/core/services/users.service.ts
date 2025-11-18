@@ -50,5 +50,23 @@ export class UsersService {
         })
       );
   }
+
+  updateUserProfile(userId: string, data: {
+    name?: string;
+    bio?: string;
+    location?: string;
+    website?: string;
+    imgURL?: string;
+  }): Observable<User> {
+    return this.http
+      .put<UserProfileResponse>(`${this.usersUrl}/${userId}`, data)
+      .pipe(
+        map(response => response.user),
+        catchError(error => {
+          console.error('Error updating user profile:', error);
+          return throwError(() => error);
+        })
+      );
+  }
 }
 
