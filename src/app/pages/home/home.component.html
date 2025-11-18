@@ -244,20 +244,6 @@
 				<p class="suggestions__empty">Ainda não há sugestões para você.</p>
 			</ng-template>
 		</section>
-
-		<section class="card recommendations">
-			<header class="card__header">
-				<h2>Recomendações</h2>
-			</header>
-			<ul class="recommendations__grid">
-				<li *ngFor="let item of recommendations">
-					<div class="recommendation" [style.background]="item.color">
-						<span aria-hidden="true">{{ item.icon }}</span>
-						<p>{{ item.title }}</p>
-					</div>
-				</li>
-			</ul>
-		</section>
 	</aside>
 </main>
 
