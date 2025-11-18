@@ -7,7 +7,7 @@ export const environment = {
   },
   strava: {
     clientId: '181714',
-    redirectUri: 'http://localhost:4200/auth/strava/callback',
+    redirectUri: 'https://backend-rust-seven-42.vercel.app/api/auth/callback',
     scope: 'read,activity:read_all,profile:read_all'
   }
 } as const;
