@@ -124,7 +124,7 @@
 				<span class="feed-card__time">{{ post.createdAt | date: 'short' }}</span>
 			</header>
 
-			<p class="feed-card__text">{{ post.content }}</p>
+			<p class="feed-card__text" [innerHTML]="post.content | mention"></p>
 
 			<!-- Workout Activities -->
 			<div class="workout-activities" *ngIf="post.workoutActivities && post.workoutActivities.length > 0">

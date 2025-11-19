@@ -53,6 +53,14 @@ export class UsersService {
       .pipe(map(response => response.suggestions));
   }
 
+  searchUsers(query: string): Observable<PublicUser[]> {
+    return this.http
+      .get<{ users: PublicUser[] }>(`${this.usersUrl}/search`, {
+        params: { q: query }
+      })
+      .pipe(map(response => response.users));
+  }
+
   getUserProfile(userId: string): Observable<User> {
     console.log(this.usersUrl)
     return this.http
