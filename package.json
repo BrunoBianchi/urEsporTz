@@ -2,12 +2,12 @@
   "name": "espor-tz",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-    "start": "npm i @angular/cli && ng serve",
+    "ng": "pnpm exec ng",
+    "start": "pnpm exec ng serve",
     "copy": "copy-folder dist/browser docs",
-    "build": "pnpm i @angular/cli && ng build --output-path=dist && npm run copy",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "build": "pnpm exec ng build --output-path=dist/browser && pnpm run copy",
+    "watch": "pnpm exec ng build --watch --configuration development",
+    "test": "pnpm exec ng test"
   },
   "private": true,
   "dependencies": {

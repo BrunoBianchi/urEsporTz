@@ -15,6 +15,21 @@ interface UserProfileResponse {
   user: User;
 }
 
+interface PreferencesFormData {
+  favoriteSports?: string[];
+  notifications?: {
+    highlights?: boolean;
+    analyses?: boolean;
+    matches?: boolean;
+    followedTeams?: boolean;
+  };
+  privacy?: {
+    profilePublic?: boolean;
+    showStats?: boolean;
+    allowAnalysisSharing?: boolean;
+  };
+}
+
 @Injectable({ providedIn: 'root' })
 export class UsersService {
   private readonly usersUrl = `${environment.apiUrl}/users`;
@@ -64,6 +79,18 @@ export class UsersService {
         map(response => response.user),
         catchError(error => {
           console.error('Error updating user profile:', error);
+          return throwError(() => error);
+        })
+      );
+  }
+
+  updateUserPreferences(userId: string, preferences: PreferencesFormData): Observable<User> {
+    return this.http
+      .put<UserProfileResponse>(`${this.usersUrl}/${userId}/preferences`, { preferences })
+      .pipe(
+        map(response => response.user),
+        catchError(error => {
+          console.error('Error updating user preferences:', error);
           return throwError(() => error);
         })
       );
